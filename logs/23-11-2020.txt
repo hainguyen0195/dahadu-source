@@ -1,0 +1,4 @@
+::1(admin)--insert--product_size(8) (17:00:03 23/11/2020)
+::1(admin)--update--product([["","id","=","24"],["AND","type","=","san-pham"]]) (17:00:03 23/11/2020)
+::1(admin)--query--tables(delete from table_seo where idmuc = '24' and com = 'product' and act = 'man' and type = 'san-pham') (17:00:03 23/11/2020)
+::1(admin)--insert--seo(1444) (17:00:03 23/11/2020)

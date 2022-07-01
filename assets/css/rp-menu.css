@@ -1,0 +1,411 @@
+.title-rpmenu {
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 17px;
+    position: relative;
+    background: var(--bgmain);
+    z-index: 12345;
+    min-height: 42px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-rpmenu .icon-bar {
+    width: 30px;
+    height: 4px;
+    background: #E25922;
+    float: left;
+    clear: both;
+    margin-bottom: 3px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.cart-epx {
+    display: none
+}
+
+#responsive-menu .close {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    font-size: 26px;
+    z-index: 123;
+}
+
+#responsive-menu {
+    position: absolute;
+    z-index: 1;
+    background: var(--bgmain);
+    width: auto;
+    max-height: 100%;
+    z-index: 99999;
+    max-height: 420px;
+    overflow-y: auto;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    min-height: 100%;
+    box-shadow: rgb(246 246 246 / 50%) -2px 0px 5px 0px inset;
+}
+
+#responsive-menu .content {
+    max-width: 300px;
+    float: right;
+    width: 100%;
+}
+
+#responsive-menu .content ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+#responsive-menu .content>ul {
+    padding: 0px 0px 0px 5px;
+    margin: 0;
+}
+
+#responsive-menu .content .toggle-menu {
+    float: right;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+}
+
+#responsive-menu .content ul li a {
+    color: #FFFFFF;
+    font-size: 15px;
+    padding-left: 5px;
+    text-transform: capitalize;
+}
+
+#responsive-menu .content ul li {
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    padding: 8px 0px;
+    border-bottom: 1px solid rgba(247, 246, 246, 0.25);
+    position: relative;
+    cursor: pointer;
+    float: none;
+}
+
+#responsive-menu .content ul li:hover {
+    /* background: #224182; */
+}
+
+#responsive-menu .content ul li ul {
+    display: none
+}
+
+#responsive-menu .content li li:first-child {
+    border-top: 1px solid rgba(247, 246, 246, 0.25);
+}
+
+#responsive-menu .content>ul>li ul {
+    position: relative;
+    top: 9px;
+}
+
+#responsive-menu .content>ul li ul li {
+    padding-left: 10px;
+}
+
+#responsive-menu .content>ul li ul li ul li {
+    /* text-indent: 20px */
+}
+
+.btn-showmenu {
+    width: 20px;
+    height: 14px;
+    position: relative;
+    z-index: 80;
+    cursor: pointer;
+    -webkit-transform: translateX(3px);
+    -khtml-transform: translateX(3px);
+    -moz-transform: translateX(3px);
+    -ms-transform: translateX(3px);
+    -o-transform: translateX(3px);
+    transform: translateX(3px);
+    margin: 0 0 0 5px;
+}
+
+.btn-showmenu:before {
+    content: "";
+    display: block;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    -webkit-transition: all, 0.3s;
+    -khtml-transition: all, 0.3s;
+    -moz-transition: all, 0.3s;
+    -ms-transition: all, 0.3s;
+    -o-transition: all, 0.3s;
+    transition: all, 0.3s;
+}
+
+.btn-showmenu:after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    left: 0px;
+    -webkit-transition: all, 0.3s;
+    -khtml-transition: all, 0.3s;
+    -moz-transition: all, 0.3s;
+    -ms-transition: all, 0.3s;
+    -o-transition: all, 0.3s;
+    transition: all, 0.3s;
+}
+
+.btn-showmenu span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    -webkit-transform: translateY(-50%);
+    -khtml-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all, 0.3s;
+    -khtml-transition: all, 0.3s;
+    -moz-transition: all, 0.3s;
+    -ms-transition: all, 0.3s;
+    -o-transition: all, 0.3s;
+    transition: all, 0.3s;
+}
+
+.btn-showmenu-wrap {
+    width: 70px;
+    height: 30px;
+    float: left;
+    padding-right: 4px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.timkiem {
+    float: right;
+    width: 91%;
+}
+
+input:hover,
+input:active,
+input:focus,
+button:hover,
+button:active,
+button:focus,
+select:hover,
+select:active,
+select:focus,
+textarea:hover,
+textarea:active,
+textarea:focus {
+    outline: none;
+}
+
+.btn-showmenu.active span {
+    opacity: 0;
+}
+
+.btn-showmenu.active:before {
+    -webkit-transform: translate(-2.5px, -50%) rotateZ(45deg);
+    -khtml-transform: translate(-2.5px, -50%) rotateZ(45deg);
+    -moz-transform: translate(-2.5px, -50%) rotateZ(45deg);
+    -ms-transform: translate(-2.5px, -50%) rotateZ(45deg);
+    -o-transform: translate(-2.5px, -50%) rotateZ(45deg);
+    transform: translate(0.5px, -50%) rotateZ(45deg);
+    top: 50%;
+}
+
+.btn-showmenu.active:after {
+    -webkit-transform: translate(3px, 50%) rotateZ(-45deg);
+    -khtml-transform: translate(3px, 50%) rotateZ(-45deg);
+    -moz-transform: translate(3px, 50%) rotateZ(-45deg);
+    -ms-transform: translate(3px, 50%) rotateZ(-45deg);
+    -o-transform: translate(3px, 50%) rotateZ(-45deg);
+    transform: translate(1px, 50%) rotateZ(-45deg);
+    bottom: 50%;
+}
+
+.fixed {
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    width: 100%;
+}
+
+.ctop {
+    top: 40px;
+    position: fixed !important;
+}
+
+.selectpicker1 {
+    padding: 5px 3px;
+    padding-bottom: 5px;
+    margin-right: -5px;
+    border: 1px solid #E6E6E6;
+    border-right: 0px;
+    width: 27%;
+    height: 35px;
+    font-size: 10pt;
+    color: #9e9e9e;
+}
+
+header #form-xsearch1 input {
+    padding: 5px 3px;
+    background-color: white;
+    outline: none;
+    border: 1px solid #E6E6E6;
+    border-left: 1px solid #EFEFEF;
+    padding-left: 6px;
+    width: 85%;
+    text-indent: 15px;
+    margin: 0 -3px;
+    font-size: 10pt;
+    color: #9e9e9e;
+    height: 35px;
+}
+
+header #form-xsearch1 button {
+    width: 15%;
+    font-size: 10pt;
+    background-color: #ED1C24;
+    border: 0;
+    color: white;
+    margin-left: 0px;
+    padding: 7px 7px;
+    height: 35px;
+}
+
+.menurepon {
+    position: relative;
+}
+
+#responsive-menu::-webkit-scrollbar {
+    width: 3px;
+    background: #C1C1C1;
+}
+
+.item-srrp {
+    width: 25px;
+    float: right;
+    height: 0px;
+}
+
+a.searchrp {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    z-index: 100;
+    background: #e5e5e5 url(../images/timkiem.png) no-repeat center center;
+    font-size: 0;
+    text-indent: -9999px;
+    display: block;
+    padding: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    top: 9px;
+}
+
+.search-formrp {
+    margin-top: 4px;
+    background-color: #fff;
+    width: 0px;
+    height: 34px;
+    position: absolute;
+    display: block;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    top: 0px;
+    -webkit-border-radius: 20px;
+    -o-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(220, 220, 220, 1);
+    opacity: 0;
+    right: 32px;
+    z-index: 23;
+}
+
+.form-row-searchrp {
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.box_searchrp {
+    position: absolute;
+    font-family: 'fontB';
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+    bottom: 66px;
+    right: 163px;
+}
+
+#search_frm_virp {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+}
+
+.form-row-searchrp input[type="text"] {
+    border: none;
+    background: none;
+    width: 100%;
+    height: 35px;
+    padding: 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 35px;
+    position: absolute;
+    display: block;
+    opacity: 0.7;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -webkit-border-radius: 20px 0 20px 20px;
+    -o-border-radius: 20px 0 20px 20px;
+    -ms-border-radius: 20px 0 20px 20px;
+    border-radius: 20px 0 20px 20px;
+    font-size: 13px;
+}

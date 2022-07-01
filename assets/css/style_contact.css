@@ -1,0 +1,254 @@
+.input-contact input,
+.input-contact textarea {
+    display: block;
+    box-sizing: border-box;
+    padding: 10px 0;
+    width: 100%;
+    height: 44px;
+    border: 1px solid #b19a6f;
+    font-weight: 400;
+    transition: 0.2s ease;
+    background: #f5f5f5;
+    border-radius: 6px;
+    text-indent: 10px;
+    font-family: 'RobotoRegular';
+    font-size: 14px;
+    color: #553301;
+    box-shadow: 0 0 BLACK;
+}
+
+.input-contact input::-webkit-input-placeholder,
+.input-contact textarea::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #000;
+}
+
+.input-contact input:focus,
+.input-contact textarea:focus {
+    outline: 0;
+    border: 1px solid #b19a6f;
+    box-shadow: 0 0 BLACK;
+    background: #fff;
+}
+
+.input-contact_flex input:focus {
+    box-shadow: 2px 2px 1px var(--color-hv-main);
+}
+
+.input-contact textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    border-radius: 5px;
+}
+
+.btn_input-contact.flex {
+    text-align: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.btn_input-contact input[type='submit'],
+.btn_input-contact input[type='reset'] {
+    width: 130px;
+    height: 40px;
+    margin: 0 5px;
+    text-indent: 0;
+    background: var(--bgmain);
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    box-shadow: 2px 2px 1px var(--color-hv-main);
+}
+
+.btn_input-contact input[type='reset'] {}
+
+.btn_input-contact input:hover {
+    transform: translateY(-5px);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.btn_input-contact input:focus {
+    outline: 0;
+}
+
+.form_contact {
+    padding: 0;
+    margin: 0px 0 25px;
+}
+
+.bottom-contact {
+    position: relative;
+}
+
+.bottom-contact iframe {
+    width: 100% !important;
+}
+
+.input-contact {
+    position: relative;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.custom-file-label {
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    background: #ccc;
+    height: 45px;
+    border: 1px solid #ccc;
+    font-family: 'RobotoRegular';
+    font-size: 14px;
+    color: #000;
+    box-shadow: 2px 2px 1px #8a8a8a;
+    padding: 10px 10px;
+}
+
+.input-contact .custom-file-label::after {
+    content: attr(title);
+    height: 45px;
+    color: #fff;
+    background: #000;
+    text-transform: uppercase;
+    padding: 10px;
+    right: -3px;
+    position: absolute;
+    top: 0;
+}
+
+.invalid-feedback {
+    display: none;
+    width: 100%;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+.custom-file-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 45px;
+    z-index: 1;
+    padding: 0.375rem 0.75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 10px 15px;
+}
+
+.custom-file-input {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    margin: 0;
+    opacity: 0;
+}
+
+.input-contact .custom-file-input {
+    opacity: 1;
+    margin: 0;
+    height: auto;
+    border: none;
+    text-indent: 1px;
+    background: transparent;
+    box-shadow: none;
+}
+
+.input-contact .custom-file-input::focus {
+    outline: 0;
+}
+
+.label_input {
+    position: relative;
+}
+
+.label_input label {
+    height: 20px;
+    line-height: 20px;
+    color: #c6ac77;
+    font: 14px RobotoRegular;
+    transform-origin: top left;
+    top: 12px;
+    transition: .3s cubic-bezier(.25, .8, .5, 1);
+    position: absolute;
+    left: 24px;
+    margin: 0;
+}
+
+.afinput {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 1px;
+    background: #fff;
+    left: 15px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.row_label_input {
+    margin: 0 -8px;
+}
+
+.label_input .invalid-feedback {
+    position: absolute;
+    left: 24px;
+    bottom: 3px;
+    font-size: 11px;
+    margin: 0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.was-validated :invalid~label,
+.is-invalid~label {
+    top: 8px;
+}
+
+.label_input input:focus~label,
+.label_input input.not-empty~label,
+.label_input textarea:focus~label,
+.label_input textarea.not-empty~label {
+    top: -10px;
+}
+
+.label_input input:focus~.invalid-feedback,
+.label_input input.not-empty~.invalid-feedback,
+.label_input textarea:focus~.invalid-feedback,
+.label_input textarea.not-empty~.invalid-feedback {
+    bottom: -100%;
+    opacity: 0;
+}
+
+.label_input label span {
+    position: relative;
+    z-index: 9;
+}
+
+.label_input label:before {
+    position: absolute;
+    content: '';
+    width: 0;
+    left: -10%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 1px;
+    background: #fff;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    opacity: 0;
+}
+
+.label_input input:focus~label:before,
+.label_input input.not-empty~label:before,
+.label_input textarea:focus~label:before,
+.label_input textarea.not-empty~label:before {
+    width: 120%;
+    opacity: 1;
+}

@@ -1,0 +1,72 @@
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1200px !important;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+	
+}
+
+@media (max-width: 767px) {
+	.padding {
+		padding: 10px 0;
+	}
+
+	footer {
+		padding: 20px 0 ;
+	}
+
+	.row_footer {
+		flex-wrap: wrap;
+	}
+
+	.footer1,
+	.footer2,
+	.footer3,
+	.footer4 {
+		width: 100%;
+		padding: 5px;
+	}
+
+	.copppy,
+	.thongke {
+		text-align: center;
+	}
+
+	.fix-toolbar {
+		display: block;
+	}
+
+	.zalo_fixed,
+	.drag-wrapper,
+	.ctrlq.fb-button,
+	.call_fixed ,header nav,.topone_center p:nth-child(2),.hotline,.menu,.topone_center p{
+		display: none;
+	}
+	.form_contact {
+		width: 100%;padding: 0;
+	}
+	.logo{
+	}
+	
+	.showmnrp{
+		display: block !important;
+	}
+	
+	.pagination>li>a, .pagination>li>span{
+		padding: 4px 10px;
+	}
+	.title-pro-detail{
+		margin: 10px 0;
+	}
+	
+}
+@media (max-width: 550px){
+	
+}

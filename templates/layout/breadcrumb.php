@@ -1,0 +1,1 @@
+<div class="breadCrumbs"><div class="container"><div class="wrap-content"><?=$breadcrumbs?></div></div></div>
